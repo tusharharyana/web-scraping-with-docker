@@ -1,0 +1,23 @@
+name: Web Scraping with Docker
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Runs every hour
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Docker
+        uses: docker/setup-buildx-action@v2
+
+      - name: Build and run scraper
+        run: |
+          docker-compose up --build -d
