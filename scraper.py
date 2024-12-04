@@ -17,7 +17,7 @@ def scrape_data():
     titles = soup.find_all('head')
     
 
-    mongo_uri = "mongodb+srv://<username>:<password>admin@cluster0.di279.mongodb.net/web_scraping_db?retryWrites=true&w=majority&appName=Cluster0" 
+    mongo_uri = "mongodb+srv://admin:admin@cluster0.di279.mongodb.net/web_scraping_db?retryWrites=true&w=majority&appName=Cluster0" 
     try:
         # Connect to MongoDB Atlas
         client = MongoClient(mongo_uri)
