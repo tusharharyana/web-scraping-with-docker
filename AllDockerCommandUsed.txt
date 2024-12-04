@@ -1,0 +1,21 @@
+Commands and Descriptions
+
+docker compose up --build
+
+Purpose: Builds and starts the containers specified in the docker-compose.yml file.
+Usage: You use this command to ensure any changes in your application code or dependencies are rebuilt and the containers are started.
+
+docker ps -a
+
+Purpose: Lists all containers, including running and stopped ones.
+Usage: Helps check the status of your containers to debug or confirm they are created.
+
+docker rm scraper-container
+
+Purpose: Removes a stopped container named scraper-container.
+Usage: When you need to recreate a container with the same name, this command clears the old one.
+
+docker compose down
+
+Purpose: Stops and removes all containers, networks, and volumes defined in the docker-compose.yml file.
+Usage: Used to clean up your environment when you're done working with your project.
