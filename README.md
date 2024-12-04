@@ -29,6 +29,9 @@ This project automates the process of scraping data from a website and storing i
 
 3. The scraper will run periodically and store the scraped data in MongoDB Atlas.
 
+## Screenshot
+![Output Screenshot](assets/output.png)
+
 ## How to Use
 
 1. Replace the `url` variable in `scraper.py` with the URL of the website you want to scrape.
